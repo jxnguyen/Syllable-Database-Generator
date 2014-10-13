@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		EE2CC1BA19EAE47500CB3713 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EE2CC1B919EAE47500CB3713 /* main.m */; };
+		EE2CC1C319EB067800CB3713 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = EE2CC1C219EB067800CB3713 /* libsqlite3.dylib */; };
+		EE2CC1C619EB06BE00CB3713 /* DBManager.m in Sources */ = {isa = PBXBuildFile; fileRef = EE2CC1C519EB06BE00CB3713 /* DBManager.m */; };
+		EE2CC1C919EB075700CB3713 /* Brain.m in Sources */ = {isa = PBXBuildFile; fileRef = EE2CC1C819EB075700CB3713 /* Brain.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +28,13 @@
 /* Begin PBXFileReference section */
 		EE2CC1B619EAE47500CB3713 /* databaseGenerator */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = databaseGenerator; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE2CC1B919EAE47500CB3713 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		EE2CC1C019EAE63800CB3713 /* EnglishHyphenDictionary.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = EnglishHyphenDictionary.txt; sourceTree = "<group>"; };
+		EE2CC1C119EAF4DC00CB3713 /* sample.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = sample.txt; sourceTree = "<group>"; };
+		EE2CC1C219EB067800CB3713 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		EE2CC1C419EB06BE00CB3713 /* DBManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBManager.h; sourceTree = "<group>"; };
+		EE2CC1C519EB06BE00CB3713 /* DBManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBManager.m; sourceTree = "<group>"; };
+		EE2CC1C719EB075700CB3713 /* Brain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Brain.h; sourceTree = "<group>"; };
+		EE2CC1C819EB075700CB3713 /* Brain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Brain.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +42,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EE2CC1C319EB067800CB3713 /* libsqlite3.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -41,6 +52,7 @@
 		EE2CC1AD19EAE47500CB3713 = {
 			isa = PBXGroup;
 			children = (
+				EE2CC1C219EB067800CB3713 /* libsqlite3.dylib */,
 				EE2CC1B819EAE47500CB3713 /* databaseGenerator */,
 				EE2CC1B719EAE47500CB3713 /* Products */,
 			);
@@ -58,8 +70,30 @@
 			isa = PBXGroup;
 			children = (
 				EE2CC1B919EAE47500CB3713 /* main.m */,
+				EE2CC1CA19EB082900CB3713 /* Classes */,
+				EE2CC1CB19EB083200CB3713 /* Resources */,
 			);
 			path = databaseGenerator;
+			sourceTree = "<group>";
+		};
+		EE2CC1CA19EB082900CB3713 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				EE2CC1C419EB06BE00CB3713 /* DBManager.h */,
+				EE2CC1C519EB06BE00CB3713 /* DBManager.m */,
+				EE2CC1C719EB075700CB3713 /* Brain.h */,
+				EE2CC1C819EB075700CB3713 /* Brain.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		EE2CC1CB19EB083200CB3713 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				EE2CC1C019EAE63800CB3713 /* EnglishHyphenDictionary.txt */,
+				EE2CC1C119EAF4DC00CB3713 /* sample.txt */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -118,7 +152,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EE2CC1C919EB075700CB3713 /* Brain.m in Sources */,
 				EE2CC1BA19EAE47500CB3713 /* main.m in Sources */,
+				EE2CC1C619EB06BE00CB3713 /* DBManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
